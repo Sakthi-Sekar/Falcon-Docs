@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css files/style.css">
+
+</head>
+
+<body onload="document.getElementById('defaultOpen').click();">
+    <script id="my_template" type="text/template">
+
+{{#content}}
+
+    
+    <div class="tab">
+        <h3>{{falcon_common}}</h3>
+        <ul>
+        <li><a href={{falcon_commom_folder_com}} class="tablinks active" onclick="openTab(event, '{{falcon_allclasses-frame}}',loadText('{{falcon_allclasses_frame}}','allclasses_frame'))" id="defaultOpen" >{{falcon_allclasses_frame}}</a>
+        </li>
+        <li><a href={{falcon_common_atmecs}} class="tablinks active" onclick="openTab(event, '{{falcon_common}}',loadText('{{falcon_commom_allclasses_noframe}}','gettingstarted'))" id="defaultOpen">{{falcon_common}}</a>
+        </li>
+        <li><a href=class="tablinks" onclick="openTab(event, '{{falcon_soap}}',loadText('{{link2}}','concepts'))">{{falcon_soap}}</li>
+        <li class="tablinks" onclick="openTab(event, '{{falcon_ui}}',loadText('{{link3}}','toolsandplugins'))">{{falcon_ui}}</li>
+        <li class="tablinks" onclick="openTab(event, '{{falcon_webservice}}',loadText('{{link4}}','troubleshooting'))">{{falcon_webservice}}</li>
+  
+    </div>
+  
+<div class="container">
+    
+    <div id="Getting Started" class="tabcontent">
+        <br/>
+        <h3>{{tab1}}</h3><br/>
+        <p id="gettingstarted"></p>
+    </div>
+
+    <div id="Concepts" class="tabcontent">
+        <br/>
+        <h3>{{tab2}}</h3><br/>
+        <p id="concepts"></p>
+    </div>
+
+    <div id="Tools and Plugins" class="tabcontent">
+        <br/>
+        <h3>{{tab3}}</h3><br/>
+        <p id="toolsandplugins"></p>
+    </div>
+    <div id="Troubleshooting" class="tabcontent">
+        <br/>
+        <h3>{{tab4}}</h3><br/>
+        <p id="troubleshooting"></p>
+    </div>
+  
+</div>
+{{/content}} 
+</script>
+    <div id="my_panel"></div>
+
+
+</body>
+
+</html>

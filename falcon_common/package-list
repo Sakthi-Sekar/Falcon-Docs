@@ -1,0 +1,14 @@
+com.atmecs.falcon.automation.dataprovider
+com.atmecs.falcon.automation.db.service
+com.atmecs.falcon.automation.db.service.db.nosql
+com.atmecs.falcon.automation.db.service.db.nosql.mongo
+com.atmecs.falcon.automation.db.sql
+com.atmecs.falcon.automation.util.enums
+com.atmecs.falcon.automation.util.error
+com.atmecs.falcon.automation.util.general
+com.atmecs.falcon.automation.util.logging
+com.atmecs.falcon.automation.util.main
+com.atmecs.falcon.automation.util.parser
+com.atmecs.falcon.automation.util.reporter
+com.atmecs.falcon.automation.verifyresult
+com.atmecs.qa.automation.util.general
