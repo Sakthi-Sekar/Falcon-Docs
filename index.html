@@ -20,49 +20,44 @@
 
     
     <div class="tab">
-        <h3>{{falcon_common}}</h3>
+        <h5>{{falcon_common}}</h5>
         <ul>
-        <li><a href={{falcon_commom_folder_com}} class="tablinks active" onclick="openTab(event, '{{falcon_allclasses-frame}}',loadText('{{falcon_allclasses_frame}}','allclasses_frame'))" id="defaultOpen" >{{falcon_allclasses_frame}}</a>
+        <li><a href={{falcon_commom_folder_com}} class="tablinks active" onclick="openTab(event, 'falcon-common',loadText('{{falcon_common_com}}','allclasses_frame'))" id="defaultOpen" >{{falcon_common_com}}</a>
         </li>
-        <li><a href={{falcon_common_atmecs}} class="tablinks active" onclick="openTab(event, '{{falcon_common}}',loadText('{{falcon_commom_allclasses_noframe}}','gettingstarted'))" id="defaultOpen">{{falcon_common}}</a>
+        <li><a href={{falcon_common_testdataprovider}} class="tablinks active" onclick="openTab(event, 'falcon-soap',loadText('{{falcon_common_indexfiles}}','falcon-common'))" id="defaultOpen">{{falcon_common_indexfiles}}</a>
         </li>
-        <li><a href=class="tablinks" onclick="openTab(event, '{{falcon_soap}}',loadText('{{link2}}','concepts'))">{{falcon_soap}}</li>
-        <li class="tablinks" onclick="openTab(event, '{{falcon_ui}}',loadText('{{link3}}','toolsandplugins'))">{{falcon_ui}}</li>
-        <li class="tablinks" onclick="openTab(event, '{{falcon_webservice}}',loadText('{{link4}}','troubleshooting'))">{{falcon_webservice}}</li>
-  
-    </div>
+        <li><a href={{falcon_common_allclasses_frame}} class="tablinks" onclick="openTab(event, 'falcon-ui',loadText('{{falcon_common_allclasses_frame}}','falcon-ui'))">{{falcon_allclasses-frame}}</li>   
+        <li><a href={{falcon_common_allclasses_frame}} class="tablinks" onclick="openTab(event, 'falcon-webservices',loadText('{{falcon_common_allclasses_frame}}','falcon-webservices'))">{{falcon_allclasses-frame}}</li> 
+       </div>
   
 <div class="container">
     
-    <div id="Getting Started" class="tabcontent">
+    <div id="Falcon-Common" class="tabcontent">
         <br/>
         <h3>{{tab1}}</h3><br/>
-        <p id="gettingstarted"></p>
+        <p id="falcon-common"></p>
     </div>
 
-    <div id="Concepts" class="tabcontent">
+    <div id="Falcon-soap" class="tabcontent">
         <br/>
         <h3>{{tab2}}</h3><br/>
-        <p id="concepts"></p>
+        <p id="falcon-soap"></p>
     </div>
 
-    <div id="Tools and Plugins" class="tabcontent">
+    <div id="Falcon-UI" class="tabcontent">
         <br/>
         <h3>{{tab3}}</h3><br/>
-        <p id="toolsandplugins"></p>
+        <p id="falcon-ui"></p>
     </div>
-    <div id="Troubleshooting" class="tabcontent">
+    <div id="Falcon-Webservices" class="tabcontent">
         <br/>
         <h3>{{tab4}}</h3><br/>
-        <p id="troubleshooting"></p>
-    </div>
-  
+        <p id="falcon-webservices"></p>
+    </div> 
 </div>
 {{/content}} 
 </script>
     <div id="my_panel"></div>
-
-
 </body>
 
 </html>

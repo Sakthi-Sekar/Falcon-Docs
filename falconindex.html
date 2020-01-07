@@ -1,0 +1,100 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css files/falconstyle.css">
+    <script id="title" type="text/template">
+        {{#content}}
+        <title>{{title_main}}</title> 
+        {{/content}}
+    </script>
+    <div id="my_title"></div>
+</head>
+
+<body>
+    <script id="my_template" type="text/template">
+        {{#content}}
+      {{#falcon}}
+    <header>
+        <h1>{{title}}</h1>&nbsp;
+        <h3>{{sub_title}}</h3>
+    </header>
+    <div class="nav-link">
+        <ul class="section">
+            <h3>{{falcon_common}}</h3>&nbsp;
+           {{#falcon_common}}
+            <li class="list"><a href='{{falcon_common_allclasses_frame}}' title={{falcon_allclasses-frame}}>{{falcon_allclasses-frame}}</a></li>
+            <li class="list"><a href='{{falcon_common_allclasses_noframe}}' title={{falcon-_allclasses-noframe}}>{{falcon-_allclasses-noframe}}</a></li>
+            <li class="list"><a href='{{falcon_common_constantvalues}}' title={{falcon_constant-values}}>{{falcon_constant-values}}</a></li>
+            <li class="list"><a href='{{falcon_common_deprecatedlist}}' title={{falcon_deprecated-list}}>{{falcon_deprecated-list}}</a></li>
+            <li class="list"><a href='{{falcon_common_helpdoc}}' title={{falcon_help-doc}}>{{falcon_help-doc}}</a></li>
+            <li class="list"><a href='{{falcon_common_index}}' title={{falcon_index}}>{{falcon_index}}</a></li>
+            <li class="list"><a href='{{falcon_common_overview_frame}}' title={{falcon_overview-frame}}>{{falcon_overview-frame}}</a></li>
+            <li class="list"><a href='{{falcon_common_overview_summary}}' title={{falcon_overview}}>{{falcon_overview}}</a></li>
+            <li class="list"><a href='{{falcon_common_overview_tree}}' title={{falcon_overview-tree}}>{{falcon_overview-tree}}</a></li>&nbsp;
+        {{/falcon_common}}
+        </ul>
+        <ul class="section">
+            <h3>{{falcon_soap}}</h3>&nbsp;
+            {{#falcon_soap}}
+            <li class="list"><a href='{{falcon_soap_allclasses_frame}}' title={{falcon_allclasses-frame}}>{{falcon_allclasses-frame}}</a></li>
+            <li class="list"><a href='{{falcon_soap_allclasses_noframe}}' title={{falcon-_allclasses-noframe}}>{{falcon-_allclasses-noframe}}</a></li>
+            <li class="list"><a href='{{falcon_soap_constantvalues}}' title={{falcon_constant-values}}>{{falcon_constant-values}}</a></li>
+            <li class="list"><a href='{{falcon_soap_deprecatedlist}}' title={{falcon_deprecated-list}}>{{falcon_deprecated-list}}</a></li>
+            <li class="list"><a href='{{falcon_soap_helpdoc}}' title={{falcon_help-doc}}>{{falcon_help-doc}}</a></li>
+            <li class="list"><a href='{{falcon_soap_index}}' title={{falcon_index}}>{{falcon_index}}</a></li>
+            <li class="list"><a href='{{falcon_soap_overview_frame}}' title={{falcon_overview-frame}}>{{falcon_overview-frame}}</a></li>
+            <li class="list"><a href='{{falcon_soap_overview_summary}}' title={{falcon_overview}}>{{falcon_overview}}</a></li>
+            <li class="list"><a href='{{falcon_soap_overview_tree}}' title={{falcon_overview-tree}}>{{falcon_overview-tree}}</a></li>&nbsp;
+      {{/falcon_soap}}
+        </ul>
+        <ul class="section">
+            <h3>{{falcon_ui}}</h3>&nbsp;
+           {{#falcon_ui}}
+            <li class="list"><a href='{{falcon_ui_allclasses_frame}}' title={{falcon_allclasses-frame}}>{{falcon_allclasses-frame}}</a></li>
+            <li class="list"><a href='{{falcon_ui_allclasses_noframe}}' title={{falcon-_allclasses-noframe}}>{{falcon-_allclasses-noframe}}</a></li>
+            <li class="list"><a href='{{falcon_ui_constantvalues}}' title={{falcon_constant-values}}>{{falcon_constant-values}}</a></li>
+            <li class="list"><a href='{{falcon_ui_deprecatedlist}}' title={{falcon_deprecated-list}}>{{falcon_deprecated-list}}</a></li>
+            <li class="list"><a href='{{falcon_ui_helpdoc}}' title={{falcon_help-doc}}>{{falcon_help-doc}}</a></li>
+            <li class="list"><a href='{{falcon_ui_index}}' title={{falcon_index}}>{{falcon_index}}</a></li>
+            <li class="list"><a href='{{falcon_ui_overview_frame}}' title={{falcon_overview-frame}}>{{falcon_overview-frame}}</a></li>
+            <li class="list"><a href='{{falcon_ui_overview_summary}}' title={{falcon_overview}}>{{falcon_overview}}</a></li>
+            <li class="list"><a href='{{falcon_ui_overview_tree}}' title={{falcon_overview-tree}}>{{falcon_overview-tree}}</a></li>&nbsp;
+        {{/falcon_ui}}
+        </ul>
+        <ul class="section">
+            <h3>{{falcon_webservices}}</h3>&nbsp;
+          {{#falcon_webservices}}
+            <li class="list"><a href='{{falcon_webservices_allclasses_frame}}' title={{falcon_allclasses-frame}}>{{falcon_allclasses-frame}}</a></li>
+            <li class="list"><a href='{{falcon_webservices_allclasses_noframe}}' title={{falcon-_allclasses-noframe}}>{{falcon-_allclasses-noframe}}</a></li>
+            <li class="list"><a href='{{falcon_webservices_constantvalues}}' title={{falcon_constant-values}}>{{falcon_constant-values}}</a></li>
+            <li class="list"><a href='{{falcon_webservices_deprecatedlist}}' title={{falcon_deprecated-list}}>{{falcon_deprecated-list}}</a></li>
+            <li class="list"><a href='{{falcon_webservices_helpdoc}}' title={{falcon_help-doc}}>{{falcon_help-doc}}</a></li>
+            <li class="list"><a href='{{falcon_webservices_index}}' title={{falcon_index}}>{{falcon_index}}</a></li>
+            <li class="list"><a href='{{falcon_webservices_overview_frame}}' title={{falcon_overview-frame}}>{{falcon_overview-frame}}</a></li>
+            <li class="list"><a href='{{falcon_webservices_overview_summary}}' title={{falcon_overview}}>{{falcon_overview}}</a></li>
+            <li class="list"><a href='{{falcon_webservices_overview_tree}}' title={{falcon_overview-tree}}>{{falcon_overview-tree}}</a></li>
+       {{/falcon_webservices}}
+        </ul>
+    </div>
+    <div class="footer">
+        <footer>
+    {{#falcon_footer}}
+          <span id="year"></span> {{copyright_title}} &copy; {{copyright_address}}&nbsp;&nbsp;
+          <a href="#" class="fa fa-twitter" style="font-size:24px;"></a>&nbsp; &nbsp;
+          <a href="#" class="fa fa-linkedin" style="font-size:24px;"></a>
+          {{/falcon_footer}}
+        </footer>
+      </div>
+      {{/falcon}}
+      {{/content}} 
+</script>
+    <div id="my_panel"></div>
+</body>
+
+</html>

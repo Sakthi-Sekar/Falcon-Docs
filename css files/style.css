@@ -23,9 +23,10 @@ h3{
   background-color: #e2e1e1;
   width: 15%;
   height: 500px;
+  text-decoration: none;
 }
 
-.tab ul{
+.tab ul {
   list-style: none;
 }
 
@@ -42,6 +43,7 @@ h3{
   cursor: pointer;
   transition: 0.3s;
   font-size: 20px;
+  text-decoration: none;
 }
 .container p{
 font-size: 20px;
@@ -50,6 +52,7 @@ font-size: 20px;
 .tab button:hover {
   background-color: rgb(190, 141, 141);
   font-size: 30px;
+  text-decoration: none;
 }
 
 /* Create an active/current "tab button" class */
@@ -66,6 +69,7 @@ font-size: 20px;
   width: 70%;
   border-left: none;
   height: 300px;
+
 }
 div[class*="tabcontent"]:first-of-type {
   display: block;
