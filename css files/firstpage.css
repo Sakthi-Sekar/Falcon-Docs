@@ -1,0 +1,230 @@
+*
+#container
+{
+    padding: 0;
+    margin: 0px auto;
+}
+.body
+{
+    background-size: cover;
+    background-position: center;
+    box-sizing: border-box;
+    font-family:sans-serif;
+ }
+ #logo
+ {
+     width: 15%;
+     height:15%;
+ }
+.menu-bar
+{
+    background:white;
+    text-align: center;
+    margin-top: -7%;
+    
+
+}
+.menu-bar ul
+{
+    display: inline-flex;
+    list-style-type:none;
+    color:black
+}
+.menu-bar ul li
+{
+    width:100px;
+    padding:10px;
+    margin:10px;
+    
+}
+.menu-bar ul li a
+{
+    text-decoration: none;
+    color:black;
+
+}
+.active,.menu-bar ul li:hover
+{
+    border-radius: 2px;
+    
+}
+.menu-bar .fa
+{
+    margin-right:5px;
+}
+.sub-menu-1
+{
+    display:none;
+}
+.menu-bar ul li:hover .sub-menu-1
+{
+    display: block;
+    position: absolute;
+    
+}
+.menu-bar ul li:hover .sub-menu-1 ul
+{
+    display:block;
+    margin:5px;
+   
+}
+.menu-bar ul li:hover .sub-menu-1 ul li
+{
+    width:150px;
+    padding:2px;
+    border-bottom: 1px dotted black;
+    background:transparent;
+    border-radius: 0;
+    text-align:left;
+    
+
+}
+.menu-bar li:hover .sub-menu-1 ul li:last-child
+{
+    border-bottom: none;
+   
+}
+.menu-bar li:hover .sub-menu-1 ul li a:hover
+{
+    color:darkslateblue;
+}
+.fa-angle-right
+{
+    float: right;
+}
+.sub-menu-2
+{
+    display: none;
+}
+.hover-me:hover .sub-menu-2
+{
+    position: absolute;
+    display: block;
+    margin-top:-50px ;
+    margin-left: 140px;
+
+}
+
+.nav-link {
+    float: left;
+    width: auto;
+    height: auto;
+    text-decoration: none;
+    padding: 10px;
+    background-color: rgb(230, 222, 222);
+    font-size: 15px;
+ 
+  }
+  .nav-link li
+  {
+    list-style-type: none;
+  }
+  
+  .nav-link a {
+    
+    color: black;
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    list-style-type: none;
+    
+
+  }
+  
+  .nav-link a:hover 
+  {
+    
+    text-decoration: underline;
+    list-style-type: none;
+    background-color: white;
+}
+
+.footer {
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color:black;
+    color: white;
+    margin-top: 93%;
+    text-align: center;
+   }
+   .footer-home {
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color:black;
+    color: white;
+    margin-top: 1%;
+    text-align: center;
+   }
+   .footerLinks
+   {
+       text-align: right;
+   }
+  
+.fa {
+    font-size: 30px;
+    text-decoration: none;
+    
+  }
+  .fa:hover {
+      opacity: 0.7;
+  }
+  .fa-twitter {
+    
+    color: white;
+  }
+  .fa-linkedin {
+   
+    color: white;
+  }
+.backgroundimage {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: border-box;
+}
+.backgroundimage img{
+    width:100%;
+     height:78%;
+}
+.btn
+{
+    border: 2px solid black;
+    background-color: white;
+    color: black;
+    padding: 14px 28px;
+    font-size: 10px;
+    cursor: pointer;
+    float: right;
+    margin: 10px 10px;
+    margin-top:-5%;
+  }
+.getstarted
+{
+   border-color: dodgerblue;
+   color: dodgerblue;
+}
+.getstarted:hover 
+{
+    background-color: dodgerblue;
+    color: white;
+}
+.login 
+{
+    border-color: dodgerblue;
+   color: dodgerblue;
+}
+.login:hover 
+{
+    background-color: dodgerblue;
+    color: white;
+}
+.btn-getstarted{
+    margin-right:100px;   
+}
+.btn-login{
+    margin-bottom:15px;
+}
+.falcon_footer{
+    font-size:24px;
+}

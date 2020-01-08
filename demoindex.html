@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="js files/script.js"></script>
+    <script type="text/javascript" src="script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css files/falconstyle.css">
@@ -29,20 +29,24 @@
         <ul class="section">
             <h3>{{falcon_common}}</h3>&nbsp;
            {{#falcon_common}}
-            <li class="list"><a href='{{falcon_common_allclasses_frame}}' title={{falcon_allclasses-frame}}>{{falcon_allclasses-frame}}</a></li>
-            <li class="list"><a href='{{falcon_common_allclasses_noframe}}' title={{falcon-_allclasses-noframe}}>{{falcon-_allclasses-noframe}}</a></li>
-            <li class="list"><a href='{{falcon_common_constantvalues}}' title={{falcon_constant-values}}>{{falcon_constant-values}}</a></li>
-            <li class="list"><a href='{{falcon_common_deprecatedlist}}' title={{falcon_deprecated-list}}>{{falcon_deprecated-list}}</a></li>
-            <li class="list"><a href='{{falcon_common_helpdoc}}' title={{falcon_help-doc}}>{{falcon_help-doc}}</a></li>
-            <li class="list"><a href='{{falcon_common_index}}' title={{falcon_index}}>{{falcon_index}}</a></li>
-            <li class="list"><a href='{{falcon_common_overview_frame}}' title={{falcon_overview-frame}}>{{falcon_overview-frame}}</a></li>
-            <li class="list"><a href='{{falcon_common_overview_summary}}' title={{falcon_overview}}>{{falcon_overview}}</a></li>
-            <li class="list"><a href='{{falcon_common_overview_tree}}' title={{falcon_overview-tree}}>{{falcon_overview-tree}}</a></li>&nbsp;
+
+
+           <button class="list active" onclick="openTab(event, '{{falcon-_allclasses-frame}}',loadText('{{falcon_common_allclasses_frame}}','allframe'))" id="defaultOpen">{{falcon-_allclasses-frame}}</button>
+           <button class="list" onclick="openTab(event, '{{falcon_allclasses_noframe}}',loadText('{{falcon_common_allclasses_noframe}}','noframe'))">{{falcon_allclasses_noframe}}</button>
+           <button class="list" onclick="openTab(event, '{{falcon_constant-values}}',loadText('{{falcon_common_constantvalues}}','constantvalues'))">{{falcon_constant-values}}</button>
+           <button class="list" onclick="openTab(event, '{{falcon_deprecated-list}}',loadText('{{falcon_common_deprecatedlist}}','depricatedlist'))">{{falcon_deprecated-list}}</button>
+           <button class="list" onclick="openTab(event, '{{falcon_help-doc}}',loadText('{{falcon_common_helpdoc}}','helpdoc'))">{{falcon_help-doc}}</button>
+           <button class="list" onclick="openTab(event, '{{falcon_index}}',loadText('{{falcon_common_index}}','index'))">{{falcon_index}}</button>
+           <button class="list" onclick="openTab(event, '{{falcon_overview-frame}}',loadText('{{falcon_common_overview_frame}}','frame'))">{{falcon_overview-frame}}</button>
+           <button class="list" onclick="openTab(event, '{{falcon_overview}}',loadText('{{falcon_common_overview_summary}}','summary'))">{{falcon_overview}}</button>
+           <button class="list" onclick="openTab(event, '{{falcon_overview-tree}}',loadText('{{falcon_common_overview_tree}}','tree'))">{{falcon_overview-tree}}</button>
+           
         {{/falcon_common}}
         </ul>
         <ul class="section">
             <h3>{{falcon_soap}}</h3>&nbsp;
             {{#falcon_soap}}
+            
             <li class="list"><a href='{{falcon_soap_allclasses_frame}}' title={{falcon_allclasses-frame}}>{{falcon_allclasses-frame}}</a></li>
             <li class="list"><a href='{{falcon_soap_allclasses_noframe}}' title={{falcon-_allclasses-noframe}}>{{falcon-_allclasses-noframe}}</a></li>
             <li class="list"><a href='{{falcon_soap_constantvalues}}' title={{falcon_constant-values}}>{{falcon_constant-values}}</a></li>

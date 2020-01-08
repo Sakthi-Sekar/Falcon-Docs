@@ -1,0 +1,81 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css files/firstpage.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js files/script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <script id="falcon_homepage" type="text/template">
+    {{#content}}
+    {{#redirect_links}}
+    {{#firstpage}}
+    <div id="container">
+        <div id="header"></div>
+        
+        <a href="#"><img src={{logo}} alt="logo" id="logo"></a>
+        <div class="menu-bar">
+            <ul>
+                <li><a href="#"><i class="fa fa-user"></i>{{menu_tab_aboutus}}</a>
+                    <div class="sub-menu-1">
+                        <ul>
+                            <li><a href="#">{{sub-menu_tab_mission}}</a></li>
+                            <li><a href="#">{{sub-menu_tab_vision}}</a></li>
+                            <li><a href="#">{{sub-menu_tab_team}}</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#"><i class="fa fa-clone"></i>{{menu_tab_resources}}</a>
+                    <div class="sub-menu-1">
+                        <ul>
+                            <li><a href='{{link_doc}}'>{{sub-menu_tab_doc}}</a></li>
+                            <li class="hover-me"><a href="#">{{sub-menu_tab_marketing}}</a><i
+                                    class="fa fa-angle-right"></i>
+                                <div class="sub-menu-2">
+                                    <ul>
+                                        <li><a href="#">{{sub-menu_tab_seo}}</a></li>
+                                        <li><a href="#">{{sub-menu_tab_media}}</a></li>
+                                        <li><a href="#">{{sub-menu_tab_services}}</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li><a href="#">{{menu_tab_mobileapp}}}</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a href="#"><i class="fa fa-inr"></i>{{menu_tab_pricing}}</a></li>
+                <li><a href="#"><i class="fa fa-phone"></i>{{menu_tab_contact}}</a></li>
+            </ul>
+        </div>
+        <button class="btn getstarted" style="margin-right:100px ;">Get Strated Free</button>
+        <button class="btn login" style="margin-bottom:15px;">Login</button>
+        <div class="backgroundimage">
+            <img src='{{backgroundimg}}'>
+            
+        </div>
+        <!--footer-->
+        <div class="footer-home">
+            {{#falcon_footer}}
+            <footer class=falcon_footer>  
+                <span id="year"></span> {{copyright_title}} &copy; {{copyright_address}}&nbsp;&nbsp;
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+            </footer>
+            {{/falcon_footer}}
+        </div>
+    </div>
+    <!--current year-->
+    {{/firstpage}}
+    {{/redirect_links}}
+    {{/content}}
+    </script>
+    <div id="falcon-firstpage_panel"></div>
+</body>
+
+</html>

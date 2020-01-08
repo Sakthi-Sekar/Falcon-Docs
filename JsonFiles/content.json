@@ -1,10 +1,30 @@
 {
     "content": [
         {
+            "firstpage": {
+                "logo": "images/logo.png",
+                "backgroundimg": "images/falconbackground.jpg",
+                "menu_tab_aboutus": "About Us",
+                "sub-menu_tab_mission": "Mission",
+                "sub-menu_tab_vision": "Vision",
+                "sub-menu_tab_team": "Team",
+                "menu_tab_resources": "Resources",
+                "sub-menu_tab_doc": "Documentation",
+                "sub-menu_tab_marketing": "Marketing",
+                "sub-menu_tab_seo": "SEO",
+                "sub-menu_tab_media": "Social Media",
+                "sub-menu_tab_services": "Services",
+                "menu_tab_mobileapp": "MobileApp",
+                "menu_tab_pricing": "Pricing",
+                "menu_tab_contact": "Contact"
+            },
+            "redirect_links": {
+                "link_doc": "falconindex.html"
+            },
             "falcon": {
-                "title_main":"Falcon | Automation Tool",
+                "title_main": "Falcon | Automation Tool",
                 "title": "Falcon",
-                "sub_title":"Simple, Reliable, Intelligent",
+                "sub_title": "Simple, Reliable, Intelligent",
                 "falcon_common": "Falcon_Common",
                 "falcon_soap": "Falcon_SOAP",
                 "falcon_ui": "Falcon_UI",
