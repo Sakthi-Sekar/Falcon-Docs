@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css files/style.css">
+
+</head>
+
+<body onload="document.getElementById('defaultOpen').click();">
+    <script id="my_template" type="text/template">
+
+{{#content}}
+
+    
+    <div class="tab">
+        <h5>{{falcon_common}}</h5>
+        <ul>
+        <li><a href={{falcon_commom_folder_com}} class="tablinks active" onclick="openTab(event, 'falcon-common',loadText('{{falcon_common_com}}','allclasses_frame'))" id="defaultOpen" >{{falcon_common_com}}</a>
+        </li>
+        <li><a href={{falcon_common_testdataprovider}} class="tablinks active" onclick="openTab(event, 'falcon-soap',loadText('{{falcon_common_indexfiles}}','falcon-common'))" id="defaultOpen">{{falcon_common_indexfiles}}</a>
+        </li>
+        <li><a href={{falcon_common_allclasses_frame}} class="tablinks" onclick="openTab(event, 'falcon-ui',loadText('{{falcon_common_allclasses_frame}}','falcon-ui'))">{{falcon_allclasses-frame}}</li>   
+        <li><a href={{falcon_common_allclasses_frame}} class="tablinks" onclick="openTab(event, 'falcon-webservices',loadText('{{falcon_common_allclasses_frame}}','falcon-webservices'))">{{falcon_allclasses-frame}}</li> 
+       </div>
+  
+<div class="container">
+    
+    <div id="Falcon-Common" class="tabcontent">
+        <br/>
+        <h3>{{tab1}}</h3><br/>
+        <p id="falcon-common"></p>
+    </div>
+
+    <div id="Falcon-soap" class="tabcontent">
+        <br/>
+        <h3>{{tab2}}</h3><br/>
+        <p id="falcon-soap"></p>
+    </div>
+
+    <div id="Falcon-UI" class="tabcontent">
+        <br/>
+        <h3>{{tab3}}</h3><br/>
+        <p id="falcon-ui"></p>
+    </div>
+    <div id="Falcon-Webservices" class="tabcontent">
+        <br/>
+        <h3>{{tab4}}</h3><br/>
+        <p id="falcon-webservices"></p>
+    </div> 
+</div>
+{{/content}} 
+</script>
+    <div id="my_panel"></div>
+</body>
+
+</html>
