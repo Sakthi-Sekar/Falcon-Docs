@@ -171,6 +171,7 @@
   }
   .fa:hover {
       opacity: 0.7;
+
   }
   .fa-twitter {
     
@@ -185,7 +186,7 @@
   background-size: cover;
   background-clip: border-box;
   opacity: 30%;
-  transform: rgb(68, 63, 63),rgb(146, 135, 135);
+  background-image:linear-gradient(black , rgba(0, 0, 0, 0.432)), url(../images/bck.jpg);
 }
 .backgroundimage img{
     width:100%;
@@ -193,7 +194,8 @@
 }
 .btn
 {
-    border: 2px solid black;
+    
+    border-radius: 10px;
     background-color: white;
     color: black;
     padding: 20px 30px;

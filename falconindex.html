@@ -11,29 +11,24 @@
     <link rel="icon" type="image/x icon" href="images/logo.png" sizes="16x16">
     </link>
     <title>Falcon</title>
-    <script id="title" type="text/template">
-        {{#content}}
-        <title>{{title_main}}</title> 
-        {{/content}}
-    </script>
-    <div id="my_title"></div>
 </head>
 
 <body>
     <script id="my_template" type="text/template">
+        <div class="content-container">
         {{#content}}
       {{#falcon}}
-      {{#common}}
+    
     <header>
         <h1>{{title}}</h1>&nbsp;
         <h3>{{sub_title}}</h3>
     </header>
     <div class="nav-link">
         <ul class="section">
-            <h3>{{falcon_common}}</h3>&nbsp;
-           
-            <li class="list"><a href="{{falcon_common_allclasses_frame}}" title={{falcon_allclasses-frame}}>{{falcon_allclasses-frame}}</a></li>
-            <li class="list"><a href="{{falcon_common_allclasses_noframe}}" title={{falcon-_allclasses-noframe}}>{{falcon-_allclasses-noframe}}</a></li>
+            <h3>{{falcon_common}}</h3>&nbsp;  
+            {{#common}}
+            <li class="list"><a href='{{falcon_common_allclasses_frame}}' title={{falcon_allclasses-frame}}>{{falcon_allclasses-frame}}</a></li>
+            <li class="list"><a href='{{falcon_common_allclasses_noframe}}' title={{falcon_allclasses-noframe}}>{{falcon_allclasses-noframe}}</a></li>
             <li class="list"><a href='{{falcon_common_constantvalues}}' title={{falcon_constant-values}}>{{falcon_constant-values}}</a></li>
             <li class="list"><a href='{{falcon_common_deprecatedlist}}' title={{falcon_deprecated-list}}>{{falcon_deprecated-list}}</a></li>
             <li class="list"><a href='{{falcon_common_helpdoc}}' title={{falcon_help-doc}}>{{falcon_help-doc}}</a></li>
@@ -47,7 +42,7 @@
             <h3>{{falcon_soap}}</h3>&nbsp;
             {{#soap}}
             <li class="list"><a href='{{falcon_soap_allclasses_frame}}' title={{falcon_allclasses-frame}}>{{falcon_allclasses-frame}}</a></li>
-            <li class="list"><a href={{falcon_soap_allclasses_noframe}} title={{falcon-_allclasses-noframe}}>{{falcon-_allclasses-noframe}}</a></li>
+            <li class="list"><a href='{{falcon_soap_allclasses_noframe}}' title={{falcon_allclasses-noframe}}>{{falcon_allclasses-noframe}}</a></li>
             <li class="list"><a href='{{falcon_soap_constantvalues}}' title={{falcon_constant-values}}>{{falcon_constant-values}}</a></li>
             <li class="list"><a href='{{falcon_soap_deprecatedlist}}' title={{falcon_deprecated-list}}>{{falcon_deprecated-list}}</a></li>
             <li class="list"><a href='{{falcon_soap_helpdoc}}' title={{falcon_help-doc}}>{{falcon_help-doc}}</a></li>
@@ -86,6 +81,9 @@
        {{/webservices}}
         </ul>
     </div>
+    <div class="bgimage">
+        <img src='{{bgimage}}'style="background-size:cover">
+    </div>  
     <div class="footer">
         <footer>
     {{#falcon_footer}}
@@ -94,9 +92,12 @@
           <a href="#" class="fa fa-linkedin" style="font-size:24px;"></a>
           {{/falcon_footer}}
         </footer>
-      </div>
+      
+    </div>
+
       {{/falcon}}
       {{/content}} 
+    </div>  
 </script>
     <div id="my_panel"></div>
 </body>

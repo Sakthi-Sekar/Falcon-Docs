@@ -3,7 +3,7 @@
         {
             "firstpage": {
                 "logo": "images/logo.png",
-                "backgroundimg": "images/falconbackground.jpg",
+                "backgroundimg": "images/bck.jpg",
                 "menu_tab_aboutus": "About Us",
                 "sub-menu_tab_mission": "Mission",
                 "sub-menu_tab_vision": "Vision",
@@ -24,6 +24,7 @@
                 "link_doc": "falconindex.html"
             },
             "falcon": {
+                "bgimage":"images/falconbackground.jpg",
                 "title_main": "Falcon | Automation Tool",
                 "title":"Falcon",
                 "sub_title":"Simple, Reliable, Intelligent",
@@ -32,7 +33,7 @@
                 "falcon_ui": "Falcon_UI",
                 "falcon_webservices": "Falcon_Webservices",
                 "falcon_allclasses-frame": "Allclasses-frame",
-                "falcon-_allclasses-noframe": "Allclasses-noframe",
+                "falcon_allclasses-noframe": "Allclasses-noframe",
                 "falcon_constant-values": "Constant-values",
                 "falcon_deprecated-list": "deprecated-list",
                 "falcon_help-doc": "Help-doc",
@@ -46,15 +47,15 @@
                 "falcon_falcon_soap": "JsonFiles/falcon-soap.json",
                 "falcon_falcon_ui": "JsonFiles/falcon-soap.json",
                 "falcon_falcon_webservices": "JsonFiles/falcon-webservices.json",
-                "falcon_common_allclasses_frame": "falcon-common/allclasses-frame.html",
-                "falcon_common_allclasses_noframe": "falcon-common/allclasses-noframe.html",
-                "falcon_common_constantvalues": "falcon-common/constant-values.html",
-                "falcon_common_deprecatedlist": "falcon-common/deprecated-list.html",
-                "falcon_common_helpdoc": "falcon-common/help-doc.html",
-                "falcon_common_index": "falcon-common/index.html",
-                "falcon_common_overview_frame": "falcon-common/overview-frame.html",
-                "falcon_common_overview_summary": "falcon-common/overview-summary.html",
-                "falcon_common_overview_tree": "falcon-common/overview-tree.html"
+                "falcon_common_allclasses_frame": "falcon_common/allclasses-frame.html",
+                "falcon_common_allclasses_noframe": "falcon_common/allclasses-noframe.html",
+                "falcon_common_constantvalues": "falcon_common/constant-values.html",
+                "falcon_common_deprecatedlist": "falcon_common/deprecated-list.html",
+                "falcon_common_helpdoc": "falcon_common/help-doc.html",
+                "falcon_common_index": "falcon_common/index.html",
+                "falcon_common_overview_frame": "falcon_common/overview-frame.html",
+                "falcon_common_overview_summary": "falcon_common/overview-summary.html",
+                "falcon_common_overview_tree": "falcon_common/overview-tree.html"
             },
             "soap": {
                 "falcon_soap_allclasses_frame": "falcon-soap/allclasses-frame.html",
